@@ -1,0 +1,83 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'portfolioapp/css/home.css' %}">
+
+<!-- about -->
+<div class="about">
+   <a class="bg_links social portfolio" href="https://github.com/DanielThisShouldWork" target="_blank">
+      <span class="icon"></span>
+   </a>
+   <a class="bg_links social dribbble" href="https://dribbble.com/Daniel9191?onboarding=true&designer=true" target="_blank">
+      <span class="icon"></span>
+   </a>
+   <a class="bg_links social linkedin" href="https://www.linkedin.com/in/daniel-samp%C3%B2-742532316/" target="_blank">
+      <span class="icon"></span>
+   </a>
+   <a class="bg_links logo"></a>
+</div>
+<!-- end about -->
+
+<nav class="mainNav">
+   
+   <div class="mainNav__links">
+      <a href="{% url 'home' %}" class="mainNav__link">Home</a>
+      <a href="{% url 'about' %}" class="mainNav__link">About</a>
+      <a href="{% url 'projects' %}" class="mainNav__link">Projects</a>
+      <a href="{% url 'contacts' %}" class="mainNav__link">Contacts</a>
+
+      
+   </div>
+   <div class="mainNav__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+         <g data-name="Layer 2" fill="#9197AE">
+            <g data-name="menu-2">
+               <rect
+                  width="24"
+                  height="24"
+                  transform="rotate(180 12 12)"
+                  opacity="0"
+               />
+               <circle cx="4" cy="12" r="1" />
+               <rect x="7" y="11" width="14" height="2" rx=".94" ry=".94" />
+               <rect x="3" y="16" width="18" height="2" rx=".94" ry=".94" />
+               <rect x="3" y="6" width="18" height="2" rx=".94" ry=".94" />
+            </g>
+         </g>
+      </svg>
+   </div>
+</nav>
+<header class="mainHeading">
+   <div class="mainHeading__content">
+      <article class="mainHeading__text">
+         <p class="mainHeading__preTitle">Portfolio</p>
+         <h2 class="mainHeading__title">Sampò Daniel</h2>
+         <p class="mainHeading__preTitle">While True: learn!</p>
+         <p class="mainHeading__description">
+            This is how I approach life, comparing it to a Python loop where you never stop learning. I've always been passionate about technology, both in software and hardware. I consider myself a hands-on theorist, and I base every relationship—whether professional or personal—on respect and courtesy. I’m highly motivated to grow professionally in the field of programming.
+         </p>
+         
+
+         <button class="cta" onclick="window.location.href='{% url 'about' %}'">Know More</button>
+
+
+
+         
+         </section>
+
+         
+      </article>
+
+      {% load static %}
+      <figure class="mainHeading__image">
+      <img
+      src="{% static 'portfolioapp/images/11.jpg' %}"
+      alt="Descrizione dell'immagine"
+      />
+      </figure>
+
+   </div>
+</header>
+
+<!-- Includi il file JavaScript -->
+<script src="{% static 'portfolioapp/js/script.js' %}"></script>
+</body>
+</html>

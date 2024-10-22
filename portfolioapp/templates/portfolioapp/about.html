@@ -1,0 +1,100 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'portfolioapp/css/home.css' %}">
+
+<!-- about -->
+<div class="about">
+    <a class="bg_links social portfolio" href="https://github.com/DanielThisShouldWork" target="_blank">
+       <span class="icon"></span>
+    </a>
+    <a class="bg_links social dribbble" href="https://dribbble.com/Daniel9191?onboarding=true&designer=true" target="_blank">
+       <span class="icon"></span>
+    </a>
+    <a class="bg_links social linkedin" href="https://www.linkedin.com/in/daniel-samp%C3%B2-742532316/" target="_blank">
+       <span class="icon"></span>
+    </a>
+    <a class="bg_links logo"></a>
+ </div>
+<!-- end about -->
+
+<nav class="mainNav">
+   
+    <div class="mainNav__links">
+        <a href="{% url 'home' %}" class="mainNav__link">Home</a>
+        <a href="{% url 'about' %}" class="mainNav__link">About</a>
+        <a href="{% url 'projects' %}" class="mainNav__link">Projects</a>
+        <a href="{% url 'contacts' %}" class="mainNav__link">Contacts</a>
+   </div>
+   <div class="mainNav__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+         <g data-name="Layer 2" fill="#9197AE">
+            <g data-name="menu-2">
+               <rect
+                  width="24"
+                  height="24"
+                  transform="rotate(180 12 12)"
+                  opacity="0"
+               />
+               <circle cx="4" cy="12" r="1" />
+               <rect x="7" y="11" width="14" height="2" rx=".94" ry=".94" />
+               <rect x="3" y="16" width="18" height="2" rx=".94" ry=".94" />
+               <rect x="3" y="6" width="18" height="2" rx=".94" ry=".94" />
+            </g>
+         </g>
+      </svg>
+   </div>
+</nav>
+<header class="mainHeading">
+   <div class="mainHeading__content">
+      <article class="mainHeading__text">
+         
+         <!--<h2 class="mainHeading__title">Sampò Daniel</h2> -->
+         <p class="mainHeading__preTitle">About me:</p>
+         <p class="mainHeading__description">
+            My name is Sampò Daniel, and I am a Full Stack Developer with a particular focus on Back-End development. I have experience working with Python and the Django framework, building scalable and efficient web applications. My background includes designing complex systems and managing databases to deliver reliable and high-performance solutions tailored to business needs.
+
+            On the front-end side, I am proficient in HTML, CSS, and JavaScript, ensuring that user interfaces are modern, responsive, and seamlessly integrated with back-end logic. I strive to create applications that provide smooth user experiences by bridging the gap between front-end and back-end development.
+         </p><br><br>
+
+         <p class="mainHeading__preTitle">Key Technical Skills:</p>
+
+         <p class="mainHeading__description">
+            Back-End:<br>
+            -Languages: Python<br>
+            -Frameworks: Django, Django REST Framework<br>
+            -Databases: PostgreSQL, MySQL<br>
+            -APIs: Designing and managing RESTful APIs<br><br>
+            Front-End:<br>            
+            -Languages: HTML, CSS, JavaScript<br>
+            -Libraries: Bootstrap, jQuery<br>
+            
+         </p><br><br>
+
+         <p class="mainHeading__preTitle">Experience:</p>
+         <p class="mainHeading__description">I have worked on a variety of projects involving API development, database management, and integrating front-end and back-end in real-time web applications. My focus is on building applications that are not only performant but also maintainable and scalable over time.</p>
+         
+         
+
+         
+
+
+
+         
+         </section>
+
+         
+      </article>
+
+      {% load static %}
+      <figure class="mainHeading__image">
+      <img
+      src="{% static 'portfolioapp/images/12.jpg' %}"
+      alt="Descrizione dell'immagine"
+      />
+      </figure>
+   </div>
+</header>
+
+<!-- Includi il file JavaScript -->
+<script src="{% static 'portfolioapp/js/script.js' %}"></script>
+</body>
+</html>
